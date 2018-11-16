@@ -1,3 +1,8 @@
+/**
+ * Main Class
+ * 
+ * @author Luis Garza krc886
+ */
 package application;
 	
 import javafx.application.Application;

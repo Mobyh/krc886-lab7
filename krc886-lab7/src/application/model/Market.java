@@ -105,15 +105,14 @@ public class Market {
 		File file = new File("data/market.csv");
 		try {
 			BufferedWriter writer = new BufferedWriter(new FileWriter(file));
-			writer.write("");
 			inventory.forEach((key, value)->{
 				try {
 					writer.append(value.getName() + "," + value.getQuantity() + "," + value.getPrice());
+					writer.append("\n");
 				} catch (IOException e) {
 					e.printStackTrace();
 				}
 			});
-			
 			writer.close();
 		} catch (IOException e) {
 			e.printStackTrace();

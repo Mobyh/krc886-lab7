@@ -18,7 +18,7 @@ public class Item implements Comparable<Item>{
 		this.name = name;
 		this.quantity = quantity;
 		this.price = price;
-		strPrice = String.format("%2.f", this.price);
+		strPrice = String.format("%.2f", this.price);
 	}
 	
 	/*Class methods*/
@@ -85,7 +85,10 @@ public class Item implements Comparable<Item>{
 	public void setStrPrice(String strPrice) {
 		this.strPrice = strPrice;
 	}
-
+	
+	/**
+	 * Compares two Items to see which one is greater alphabetically
+	 */
 	public int compareTo(Item item) {
 		return this.name.compareTo(item.getName());
 	}	
