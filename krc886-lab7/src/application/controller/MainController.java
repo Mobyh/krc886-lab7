@@ -20,9 +20,9 @@ public class MainController implements EventHandler<ActionEvent>{
 
 	/*Class variables*/
 	@FXML
-	Button button;
+	private Button button;
 	@FXML
-	TextArea area;
+	private TextArea area;
 	
 	//Set up regular expression to process text area
 	final String regex = "^([a-zA-Z ]*)[ ]*([0-9]*)[ ]*[$]([0-9]*[.][0-9]{2})$";

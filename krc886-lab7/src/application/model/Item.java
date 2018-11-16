@@ -13,7 +13,7 @@ public class Item implements Comparable<Item>{
 	private Double price;
 	private String strPrice;
 	
-	/*Constructo*/
+	/*Constructor*/
 	public Item(String name, Integer quantity, Double price) {
 		this.name = name;
 		this.quantity = quantity;
